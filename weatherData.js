@@ -45,7 +45,7 @@ async function fetchWeatherData(latitude,longitude){
         const result = await response.json();
         weatherData.innerHTML = `
         <span>Location : ${result.name}</span>
-        <span>Wind-Speed : ${((result.wind.speed)*3.6).toFixed(2)} kmph</span>
+        
         <span>Humidity : ${result.main.humidity}%</span>
         <span>Time Zone : GMT+5:30</span>
         <span>Pressure : ${(result.main.pressure * 0.000987).toFixed()}atm</span>
