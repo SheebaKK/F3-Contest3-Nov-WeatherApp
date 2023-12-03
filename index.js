@@ -12,10 +12,10 @@ const success = (position) => {
     });
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
-    document.cookie = `latitude=${latitude}; path=/weatherMap/weatherData.html`;
-    document.cookie = `longitude=${longitude}; path=/weatherMap/weatherData.html`;
+    document.cookie = `latitude=${latitude}; path=/weatherData.html`;
+    document.cookie = `longitude=${longitude}; path=/weatherData.html`;
     setTimeout(() => {
-        window.location.href = "weatherMap/weatherData.html"
+        window.location.href = "weatherData.html"
         console.log( window.location.href + "weatherData.html");
     },500)
 }
@@ -28,3 +28,7 @@ const error = (error) => {
 function getLatLong(){
    navigator.geolocation.getCurrentPosition(success, error);
 }
+
+
+
+
