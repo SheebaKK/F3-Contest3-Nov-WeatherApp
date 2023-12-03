@@ -15,8 +15,8 @@ const success = (position) => {
     document.cookie = `latitude=${latitude}; path=/weatherMap/weatherData.html`;
     document.cookie = `longitude=${longitude}; path=/weatherMap/weatherData.html`;
     setTimeout(() => {
-        window.location.href = "./weatherMap/weatherData.html"
-        console.log( window.location.href + "weatherData.html");
+        window.location.href = "/weatherMap/weatherData.html"
+        console.log( window.location.href + "/weatherData.html");
     },500)
 }
 
