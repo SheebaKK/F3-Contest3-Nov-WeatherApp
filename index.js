@@ -12,8 +12,8 @@ const success = (position) => {
     });
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
-    // document.cookie = `latitude=${latitude}; path=weatherData.html`;
-    // document.cookie = `longitude=${longitude}; path=weatherData.html`;
+    document.cookie = `latitude=${latitude}; path=weatherData.html`;
+    document.cookie = `longitude=${longitude}; path=weatherData.html`;
     setTimeout(() => {
         window.location.href = "weatherData.html"
         console.log( window.location.href + "weatherData.html");

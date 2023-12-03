@@ -35,7 +35,7 @@ window.addEventListener("load", () => {
     
 });
 
-const openWeatherAPI = `d2e6c9019743a5e2b41d19c98653f36b`
+const openWeatherAPI = "39c6f0ed474873c6fcaffada66148daa"
 
 
 async function fetchWeatherData(latitude,longitude){
