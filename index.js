@@ -29,6 +29,3 @@ function getLatLong(){
    navigator.geolocation.getCurrentPosition(success, error);
 }
 
-
-
-
